@@ -74,7 +74,7 @@ LRESULT APIENTRY CKeyHook::hkWndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM 
 	if (pMenu->bOpen)
 		ImGui_ImplWin32_WndProcHandler(hWnd, msg, wParam, lParam);
 
-	if (isKeyPressed(VK_INSERT))
+	if (isKeyPressed(VK_END))
 	{
 		pMenu->bOpen = !pMenu->bOpen;
 		pMenu->iToggle = 0;
